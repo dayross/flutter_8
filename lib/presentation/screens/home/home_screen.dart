@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_8/config/menu/menu_items.dart';
+import 'package:flutter_8/presentation/screens/buttons/buttons_screens.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -54,6 +55,12 @@ class _CustomListTile extends StatelessWidget {
       subtitle: Text(items.subtitle),
       onTap: () {
         // tODO mandar a otras pantallas
+/*           Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => const ButtonsScreens(),
+            ),
+          ); */
+        Navigator.pushNamed(context, items.link);
       },
     );
   }
