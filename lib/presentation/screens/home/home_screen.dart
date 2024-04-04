@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_8/config/menu/menu_items.dart';
+import 'package:flutter_8/presentation/screens/cards/cards_screen.dart';
 import 'package:go_router/go_router.dart';
 
 class HomeScreen extends StatelessWidget {
+  static const String name = 'home_screen';
+
   const HomeScreen({super.key});
 
   @override
@@ -54,7 +57,7 @@ class _CustomListTile extends StatelessWidget {
       title: Text(items.title),
       subtitle: Text(items.subtitle),
       onTap: () {
-        context.push(items.link);
+        context.pushNamed(CardsScreen.name);
 /*           Navigator.of(context).push(
             MaterialPageRoute(
               builder: (context) => const ButtonsScreens(),
