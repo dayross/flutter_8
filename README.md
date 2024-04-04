@@ -1,3 +1,5 @@
 # flutter_8
 
-A new Flutter project.
+En realidad estoy en la practica 9 del curso de flutter, pero me olvide de ponerle 9.
+
+Aplicación movil con distintos botones personalizables y tarjetas.
