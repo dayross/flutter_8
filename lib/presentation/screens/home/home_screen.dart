@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_8/config/menu/menu_items.dart';
-import 'package:flutter_8/presentation/screens/buttons/buttons_screens.dart';
+import 'package:go_router/go_router.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -54,13 +54,13 @@ class _CustomListTile extends StatelessWidget {
       title: Text(items.title),
       subtitle: Text(items.subtitle),
       onTap: () {
-        // tODO mandar a otras pantallas
+        context.push(items.link);
 /*           Navigator.of(context).push(
             MaterialPageRoute(
               builder: (context) => const ButtonsScreens(),
             ),
           ); */
-        Navigator.pushNamed(context, items.link);
+        //Navigator.pushNamed(context, items.link);
       },
     );
   }
