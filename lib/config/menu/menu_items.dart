@@ -49,4 +49,9 @@ const appMenuItems = <MenuItem>[
       subtitle: 'Aprende el uso de nuestra aplicación',
       link: '/tutorial',
       icon: Icons.psychology_alt),
+  MenuItem(
+      title: 'Infinite Scroll y Pull to Refresh',
+      subtitle: 'Pantalla de deslizo infinita y pull to refresh',
+      link: '/infinite',
+      icon: Icons.view_timeline_rounded),
 ];
