@@ -17,21 +17,21 @@ class SnackBarScreen extends StatelessWidget {
             FilledButton.tonal(
                 onPressed: () {
                   showAboutDialog(
-                      context: context, children: [Text('Easter Egg\nHi')]);
+                      context: context, children: [const Text('Easter Egg\nHi')]);
                 },
-                child: Text('Licencias potaxianas')),
+                child: const Text('Licencias potaxianas')),
             FilledButton.tonal(
                 onPressed: () {
                   openDialog(context);
                 },
-                child: Text('Mostrar dialogo de pantalle')),
+                child: const Text('Mostrar dialogo de pantalle')),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () => showCustomSnackBar(context),
         label: const Text('Mostrar SnackBar'),
-        icon: Icon(Icons.gamepad_rounded),
+        icon: const Icon(Icons.gamepad_rounded),
       ),
     );
   }
@@ -42,8 +42,8 @@ class SnackBarScreen extends StatelessWidget {
         context: context,
         barrierDismissible: false,
         builder: (context) => AlertDialog(
-              title: Text('¿Estas seguro?'),
-              content: Icon(
+              title: const Text('¿Estas seguro?'),
+              content: const Icon(
                 Icons.emoji_nature,
                 size: 80,
               ),
@@ -52,8 +52,8 @@ class SnackBarScreen extends StatelessWidget {
                     onPressed: () {
                       context.pop();
                     },
-                    child: Text('Cancelar')),
-                FilledButton(onPressed: () {}, child: Text('Aceptar'))
+                    child: const Text('Cancelar')),
+                FilledButton(onPressed: () {}, child: const Text('Aceptar'))
               ],
             ));
   }
@@ -62,7 +62,7 @@ class SnackBarScreen extends StatelessWidget {
     ScaffoldMessenger.of(context).clearSnackBars();
     final snakcbar = SnackBar(
       content: const Text('Hola Mundo'),
-      duration: Duration(seconds: 3),
+      duration: const Duration(seconds: 3),
       action: SnackBarAction(
         label: 'Hola!',
         onPressed: () {},

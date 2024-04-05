@@ -57,7 +57,7 @@ class _ControlledProgressIndicator extends StatelessWidget {
     // el streamBuilder se compila en tiempo de ejecucion y esta
     // asociado a un stream
     return StreamBuilder(
-      stream: Stream.periodic(Duration(milliseconds: 200), (value) {
+      stream: Stream.periodic(const Duration(milliseconds: 200), (value) {
         return (value * 2) / 100;
       }).takeWhile((value) => value < 100),
       builder: (context, snapshot) {
@@ -72,7 +72,7 @@ class _ControlledProgressIndicator extends StatelessWidget {
                   color: colors.primary,
                   value: progressValue,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 20,
                 ),
                 Expanded(child: LinearProgressIndicator(value: progressValue,))

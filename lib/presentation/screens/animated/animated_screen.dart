@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_this
+
 import 'dart:math';
 import 'package:flutter/material.dart';
 
@@ -34,18 +36,18 @@ class _AnimatedScreenState extends State<AnimatedScreen> {
     
     return Scaffold(
       appBar: AppBar(
-        title: Text('Animated Screen'),
+        title: const Text('Animated Screen'),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           changeShape();
           setState(() {});
         },
-        child: Icon(Icons.plus_one),
+        child: const Icon(Icons.plus_one),
       ),
       body: Center(
         child: AnimatedContainer(
-          duration: Duration(milliseconds: 300),
+          duration: const Duration(milliseconds: 300),
           curve: Curves.bounceInOut,
           width: this.width,
           height: this.height,
