@@ -82,13 +82,13 @@ class _AppTutorialScreenState extends State<AppTutorialScreen> {
           right: 30,
             child: FadeInRight(
               from: 15,
-              delay: Duration(milliseconds: 500),
+              delay: const Duration(milliseconds: 500),
               child: FilledButton(
-                        child: Text('¡Entendido!'),
+                        child: const Text('¡Entendido!'),
                         onPressed: () => context.pop(),
                       ),
             )) 
-        : SizedBox()
+        : const SizedBox()
       ],
     ));
   }
