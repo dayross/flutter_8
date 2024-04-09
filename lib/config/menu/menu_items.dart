@@ -59,4 +59,9 @@ const appMenuItems = <MenuItem>[
       subtitle: 'Pantalla de deslizo infinita y pull to refresh',
       link: '/infinite',
       icon: Icons.view_timeline_rounded),
+  MenuItem(
+      title: 'Cambiar tema',
+      subtitle: 'Cambiar tema y color de la aplicacion',
+      link: '/theme-changer',
+      icon: Icons.palette_outlined),
 ];
