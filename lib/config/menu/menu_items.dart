@@ -15,6 +15,11 @@ class MenuItem {
 
 const appMenuItems = <MenuItem>[
   MenuItem(
+      title: 'Contador',
+      subtitle: 'Contador de clicks con botón',
+      link: '/counter',
+      icon: Icons.plus_one),
+  MenuItem(
       title: 'Botones',
       subtitle: 'Varios botones en Flutter',
       link: '/buttons',
